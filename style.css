@@ -7,3 +7,15 @@
 .service_button:hover{
     transform: scale(1.1); /* Scale up the image on hover */
 }
+
+
+/* CSS for hotOpportunity section */
+.hotOpportunity {
+    transition: border-color 0.3s; /* Add transition for smooth hover effect */
+    border: 2px solid transparent; /* Initially, set a transparent border */
+}
+
+/* Hover effect */
+.hotOpportunity:hover {
+    border-color: rgb(17, 10, 10); /* Change border color on hover */
+}
