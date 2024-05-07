@@ -6,3 +6,10 @@ module.exports = {
     },
     plugins: [],
   }
+
+
+
+  function toggleLoginForm() {
+    var loginForm = document.getElementById("login-form-container");
+    loginForm.classList.toggle("hidden");
+}

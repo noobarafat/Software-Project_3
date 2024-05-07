@@ -21,7 +21,7 @@
 
 </head>
 
-<body>
+<body id="home">
     <nav class="bg-slate-300">
         <div class="navbar bg-base-100 w-[85%] mx-auto my-0 bg-slate-300">
             <div>
@@ -38,7 +38,7 @@
                     </div>
                     <ul tabindex="0"
                         class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                        <li><a>Home</a></li>
+                        <li><a href="#home">Home</a></li>
                         <li>
                             <a>Browse Opportunities</a>
                             <ul class="p-2">
@@ -49,16 +49,15 @@
                                 <li><a href="#practice">Practice</a></li>
                             </ul>
                         </li>
-                        <li><a>About Us</a></li>
+                        <li><a href="#footer">About Us</a></li>
                     </ul>
                 </div>
                 <a class="btn btn-ghost text-xl"><span class="text-4xl text-red-900 font-extrabold">Code</span>
-                    <Chance class="text-4xl text-green-900 font-extrabold ml-[-5px]">Portal</span>
-                </a>
+                    <span class="text-4xl text-green-900 font-extrabold ml-[-5px]">Portal</span></a>
             </div>
             <div class="navbar-center hidden lg:flex pr-48">
                 <ul class="menu menu-horizontal px-1">
-                    <li><a>Home</a></li>
+                    <li><a href="#home">Home</a></li>
                     <li>
                         <details>
                             <summary>Browse Opportunities</summary>
@@ -71,12 +70,13 @@
                             </ul>
                         </details>
                     </li>
-                    <li><a>About Us</a></li>
+                    <li><a href="#footer">About Us</a></li>
                 </ul>
             </div>
             <div class="pr-10 flex gap-6">
                 <div class="navbar pr-[-5px]">
-                    <a class="btn bg-red-300 rounded-2xl px-6 text-xl">Log in</a>
+                    <a class="btn bg-red-300 rounded-2xl px-6 text-xl" onclick="toggleLoginForm()">Log in</a>
+
                 </div>
                 <div class="navbar">
                     <a class="btn bg-red-300 rounded-2xl px-6 text-xl">Sign up</a>
@@ -901,8 +901,30 @@
 
     </section>
 
+    <!-- Login -->
+    <section>
+        <div id="login-form-container" class="hidden container">
+            <form action="#" class="login-form">
+              <h2>Login</h2>
+              <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+              </div>
+              <button type="submit">Login</button>
+            </form>
+            <div class="signup-link">
+              <p>Don't have an account? <a href="#">Sign up</a></p>
+            </div>
+          </div>
+          
+    </section>
+
     <!-- Footer -->
-    <footer class=" bg-black text-center lg:text-left">
+    <footer class=" bg-black text-center lg:text-left" id="footer">
         <div
             class="flex flex-col justify-between gap-20 lg:gap-60 lg:flex-row text-white pt-14 pb-14 w-9/12 mx-auto my-0">
             <div class="flex-1 lg:-mt-4">
